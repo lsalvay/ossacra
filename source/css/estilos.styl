@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+texto = #5e5e5e
+principal = #568f00 //Verde
+secundario = #2c3e50 //Azul
+tercero = #188ed4 // Celeste
+cuarto = #ede9e6
+
+html
+	font-size 15px
+body 
+	color texto
+	background #fff
+	font-family: 'Titillium Web', sans-serif;
+a
+	cursor pointer
+.btn 
+	border-radius 0
+.btn-primary
+	background secundario
+	:hover
+		background tercero
+.dropdown-menu
+	width 100%
+.encabezado
+	background cuarto
+	color secundario
+	border-bottom 2px solid principal
+	.row
+		padding 5px 0px
+	.logo
+		img
+			width 180px
+			height auto
+	.btn-salir
+		font-size 0.9rem
+		a
+			color secundario
+			text-decoration none
+		:hover
+			color texto
+	h2
+		margin-bottom 0
+.nav
+	border-top 3px solid #659917 
+.nav-tabs
+	border-bottom none
+	background principal
+	font-family: 'Titillium Web', sans-serif;
+	text-transform uppercase
+	font-size 15px
+	font-weight: 700
+	
+.nav-tabs .nav-item
+	margin-bottom 0
+
+.navbar-nav .nav-item+.nav-item
+	margin-left 0
+	
+.nav-tabs .nav-link
+	border-top-right-radius 0
+	border-top-left-radius 0
+	
+.navbar
+	padding 0
+	border-radius 0
+	
+.navbar-light .navbar-nav .nav-link
+	color #fff
+	padding 14px 19px
+	border-right 1px solid #659917
+	
+.navbar-light .navbar-nav .nav-link:hover
+	background #659917
+	color #fff
+	border-color #659917
+.navbar-light .navbar-nav .active> .nav-link
+	background #659917
+	color #fff
+.navbar-light .navbar-nav .active> .nav-link:hover
+	color #fff
+.contenedor
+	margin-top 170px
+	margin-bottom 30px
+	h2
+		padding 20px 0px
+	.items
+		min-height 450px
+	.item
+		margin-bottom 5px
+		a
+			display block
+			margin 15px 36px
+			text-decoration none
+			list-style none
+			color secundario
+		a:hover
+			color texto
+		i
+			font-size 60px
+.fila-info
+	td
+		padding 0
+fieldset
+	border-bottom 1px solid cuarto
+	border-top 1px solid cuarto
+	margin-top 10px
+	margin-bottom 10px
+	padding-bottom 19px	
+.btn_cerrar
+	display none
+.table-total
+	background tercero
+	color #fff
+footer
+	padding 3em
+	background cuarto
+	span
+		font-size 1.3em
+.tag-pill
+	padding .3em
+	border-radius 50%
+	background red
+	position absolute
+	font-size 1.2rem
+	color #fff
+	line-height .8em
+
+@media (max-width: 760px)
+	.nav-tabs
+		background none
+	.navbar-light .navbar-nav .nav-link
+		border none
+		color texto
+	.navbar-light .navbar-nav .nav-link:hover
+		background #ccc
+		color texto
+	.logo,.titulo,.btn-salir
+		margin-bottom 5px
+	.titulo
+		h2
+			font-size 30px
+	.contenedor
+		margin-top 190px
+	.encabezado
+		.row
+			padding 0
+	.ver_m
+		display none
+	
