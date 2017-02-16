@@ -125,8 +125,7 @@ footer
 	font-size 1.2rem
 	color #fff
 	line-height .8em
-
-@media (max-width: 760px)
+@media (max-width: 990px)
 	.nav-tabs
 		background none
 	.navbar-light .navbar-nav .nav-link
@@ -135,16 +134,25 @@ footer
 	.navbar-light .navbar-nav .nav-link:hover
 		background #ccc
 		color texto
+	.navbar-light .navbar-nav .active> .nav-link:hover
+		background #659917
+
+@media (max-width: 760px)
 	.logo,.titulo,.btn-salir
 		margin-bottom 5px
-	.titulo
-		h2
-			font-size 30px
+		
 	.contenedor
 		margin-top 190px
+		h2
+			font-size 25px
+		
 	.encabezado
 		.row
 			padding 0
 	.ver_m
 		display none
+@media (max-width: 400px)
+	footer
+		p
+			font-size 13px
 	
