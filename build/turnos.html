@@ -69,7 +69,7 @@
 						<form>
 						<br>
 							<div class="row">
-								<div class="col-xs-12 col-md-6">
+								<div class="col-xs-12 col-md-6 col-lg-4">
 									<div class="form-group">
 							    		<label for="especialidad">Especialidad</label>
 							    		<select class="form-control" id="especialidad">
@@ -79,7 +79,7 @@
 									    </select>
 							  		</div>
 								</div>
-								<div class="col-xs-12 col-md-6">
+								<div class="col-xs-12 col-md-6 col-lg-4">
 									<div class="form-group">
 							    		<label for="medico">Médico</label>
 							    		<select class="form-control" id="medico">
@@ -89,19 +89,32 @@
 									    </select>
 							  		</div>
 								</div>
-								<div class="col-xs-12 col-md-6">
+								<div class="col-xs-12 col-md-6 col-lg-2">
 									<div class="form-group">
 							    		<label for="fecha">Fecha</label>
-							    		<input type="text" class="form-control datepicker" id="fecha" placeholder="Fecha">
+							    		<input type="text" class="form-control datepicker" id="fecha" placeholder="Fecha" readonly>
 							  		</div>
 								</div>
-								<div class="col-xs-12 col-md-6">
+								<div class="col-xs-12 col-md-6 col-lg-2">
 									<div class="form-group">
 							    		<label for="hora">Hora</label>
-							    		<input type="text" class="form-control" id="hora" placeholder="hora">
+							    		<select class="form-control" id="hora">
+									      <option>8:00</option>
+									      <option>9:00</option>
+									      <option>10:00</option>
+									      <option>11:00</option>
+									      <option>12:00</option>
+									      <option>13:00</option>
+									      <option>14:00</option>
+									      <option>15:00</option>
+									      <option>16:00</option>
+									      <option>17:00</option>
+									      <option>18:00</option>
+									    </select>
 							  		</div>
 								</div>
 							</div>
+							<br>
 							<div class="row">
 								<div class="col-xs-6 text-xs-right">
 									<input class="btn btn-primary" type="submit" value="Guardar Turno">	
