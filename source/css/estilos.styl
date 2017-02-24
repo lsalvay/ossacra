@@ -1,6 +1,8 @@
+@import 'nib'
+@import 'nib/gradients'
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-texto = #5e5e5e
+texto = #000
 principal = #568f00 //Verde
 secundario = #2c3e50 //Azul
 tercero = #188ed4 // Celeste
@@ -10,6 +12,7 @@ cuarto = #ede9e6
 html
 	font-size 15px
 body 
+	font-weight 550
 	color texto
 	background #fff
 	font-family: 'Titillium Web', sans-serif;
@@ -24,14 +27,14 @@ a
 .dropdown-menu
 	width 100%
 .encabezado
-	background cuarto
+	background linear-gradient(#fff, cuarto)
 	color secundario
 	border-bottom 2px solid principal
 	.row
 		padding 5px 0px
 	.logo
 		img
-			width 180px
+			width 100px
 			height auto
 	.btn-salir
 		font-size 0.9rem
@@ -47,7 +50,7 @@ a
 	border-top 3px solid #659917 
 .nav-tabs
 	border-bottom none
-	background principal
+	background linear-gradient(principal, #75ad1a)
 	font-family: 'Titillium Web', sans-serif;
 	text-transform uppercase
 	font-size 15px
@@ -118,7 +121,7 @@ fieldset
 	color #fff
 footer
 	padding 3em
-	background cuarto
+	background linear-gradient(cuarto, #fff)
 	span
 		font-size 1.3em
 .tag-pill
