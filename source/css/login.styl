@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 texto = #5e5e5e
 principal = #568f00 //Verde
 secundario = #2c3e50 //Azul
@@ -5,7 +7,7 @@ tercero = #00b3db // Celeste
 cuarto = #ede9e6
 
 body
-  
+  font-family: 'Open Sans', sans-serif;
   padding-top 40px
   padding-bottom 40px
   background cuarto
@@ -18,6 +20,13 @@ body
     margin-bottom -1px
     border-bottom-right-radius 0
     border-bottom-left-radius 0
+  input::-webkit-input-placeholder
+    color texto
+  input:-moz-placeholder
+    color texto
+  input:-ms-input-placeholder
+    color texto
+  
   input[type="password"]
     margin-bottom 10px
     border-top-left-radius 0
@@ -40,11 +49,11 @@ body
 .logo
   img
     margin 0 2em 2em 2em
-    width 200px
+    width 350px
 
 @media (max-width: 760px) 
   .logo
     img
-      width 150px
+      width 300px
       height auto
       margin 0
